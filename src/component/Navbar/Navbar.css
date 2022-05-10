@@ -1,0 +1,45 @@
+.navbar a{
+	color: white;
+}
+
+.navbar-brand {
+	font-family: 'Staatliches', cursive !important;
+	letter-spacing: 1px;
+}
+
+.navbar-nav a{
+	font-weight: 400;
+	text-shadow: 1px 1px 5px rgb(183, 183, 183);
+}
+
+.navbar-nav a:hover{
+	border-bottom: 1px solid white;
+	margin-top: -1px;
+	font-weight: 500;
+}
+
+
+/* Scroll Navbar */
+
+.pa-fixed-header {
+	background-color: #ffffff !important;
+	-webkit-transition: background-color 1s ease-out;
+	-moz-transition: background-color 1s ease-out;
+	-o-transition: background-color 1s ease-out;
+	transition: background-color 0.2s ease-out;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text-white{
+	color: white;
+}
+
+.text-black{
+    color: #000000 !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar a{
+      color: black !important;
+    }
+  }

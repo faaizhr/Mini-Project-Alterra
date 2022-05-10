@@ -1,6 +1,7 @@
 import {useNavigate} from "react-router-dom"
 // import style from './Comic.module.css'
 import ListItem from "../Comics/ListItem"
+import style from "./Genre.module.css"
 
 const ListItemGenre = ({item}) => {
 
@@ -23,8 +24,15 @@ const ListItemGenre = ({item}) => {
     // console.log("item", item)
     
     return (
-        <div>
-            <p onClick={() => handleDetail(item.id)}>{genre}</p>
+        <div className={style.listItemGenre} onClick={() => handleDetail(item.id)}>
+            <div class="row justify-content-between">
+                <div class="col-11">
+                <p className="ms-3 align-middle" >{genre}</p>
+                </div>
+                <div class="col-1">
+                <i class="bi bi-chevron-right"></i>
+                </div>
+            </div>
         </div>
     )
     

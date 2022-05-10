@@ -1,3 +1,19 @@
+.jumbotronCustom {
+    margin-top: -65px;
+    background-image: url(../Home/Jumbotron.jpg);
+    background-size: cover;
+}
+
+.jumbotronCustom h1 {
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+.jumbotronCustom p {
+    color: white;
+}
+
 .comicList {
     margin-top: 50px;
     display: flex;
@@ -5,6 +21,93 @@
     justify-content: space-evenly;
 }
 
+/* .comicContainer {
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+} */
+
 .comicItem {
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+.comicItem h5 {
+    height: 50px;
+}
+
+.comicItem h5:hover {
+    color: #A9211A;
+    cursor: pointer;
+}
+
+.comicItem img {
+    height: 400px;
+}
+
+.comicItem p,i {
+    display: inline;
+}
+
+.comicItem i {
+    color: #FFBD00;
+    display: inline;
+}
+
+.cardListCustom {
+    border: none;
+}
+.cardListCustom:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.cardCustom {
+    width: 100% !important;
+    background-color: rgb(251, 251, 251);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.cardCustom img {
+    height: 430px;
+}
+
+.cardCustom i {
+    color: rgb(255, 221, 0);
+}
+
+.cardCustom h5 {
+    font-size: 30px;
+}
+
+.cardCustom button {
+    background-color: #FFBD00;
+    border: 1px solid #FFBD00;
+    border-radius: 5px;
+    color: white;
+}
+
+.cardCustom button:hover {
+    background-color: #ffffff;
+    border: 1px solid #FFBD00;
+    border-radius: 5px;
+    color: #FFBD00;
+}
+
+.readComic button {
+    background-color: #FFBD00;
+    border: 1px solid #FFBD00;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+.readComic button:hover {
+    background-color: #ffffff;
+    border: 1px solid #FFBD00;
+    border-radius: 5px;
+    color: #FFBD00;
+}
+
+@media (max-width: 991.98px) {
+    .jumbotronCustom {
+      margin-top: 0px;
+    }
+  }

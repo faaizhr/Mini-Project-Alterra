@@ -1,0 +1,46 @@
+.jumbotronCustom {
+    margin-top: -65px;
+    background-image: url(../Home/Jumbotron.jpg);
+    background-size: cover;
+}
+
+.jumbotronCustom h1 {
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+.jumbotronCustom p {
+    color: white;
+}
+
+.listGenre {
+    margin-top: 10px;
+}
+
+.listItemGenre {
+    border-bottom: 1px solid rgb(189, 189, 189);
+    /* margin-bottom: 15px; */
+    padding-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.listItemGenre:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.comicList {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .jumbotronCustom {
+      margin-top: 0px;
+    }
+  }

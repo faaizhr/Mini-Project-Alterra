@@ -1,6 +1,8 @@
-import Navbar from "../Navbar"
+import Navbar from "../Navbar/Navbar"
 import useGetGenres from "../../hooks/useGetGenres"
 import ListItemGenre from "./ListItemGenre"
+import style from "./Genre.module.css"
+import Footer from "../Footer/Footer"
 
 function ListGenre() {
     
@@ -19,10 +21,16 @@ function ListGenre() {
     return(
         <div>
             <Navbar/>
-            <div className="container">
-                <h3>List Genres</h3>
+            <div className={`jumbotron jumbotron-fluid ${style.jumbotronCustom}`}>
+                <div className="container">
+                <h1 className="display-4 mt-5">Genres</h1>
+                <p className="lead"></p>
+                </div>
+            </div>
+            <div className={`container ${style.listGenre}`}>
                 {data?.genre.map((genre) => <ListItemGenre key={genre.id} item={genre}/>)}
             </div>
+            <Footer/>
         </div>
     )
 }

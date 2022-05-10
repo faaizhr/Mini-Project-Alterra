@@ -6,9 +6,7 @@ const Categories = ({item}) => {
 
 
     return (
-        <div>
-            <p>{item.genre.genre}</p>
-        </div>
+        <li class="list-inline-item">{item.genre.genre}</li>   
     )
 }
 

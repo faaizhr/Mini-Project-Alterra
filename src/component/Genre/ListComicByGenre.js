@@ -3,6 +3,9 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import ListItem from "../Comics/ListItem"
 import ListItemComicByGenre from "./ListItemComicByGenre"
+import style from "./Genre.module.css"
+import Navbar from "../Navbar/Navbar"
+import Footer from "../Footer/Footer"
 
 const ListComicByGenre = () => {
 
@@ -13,8 +16,19 @@ const ListComicByGenre = () => {
 
     return (
         <div>
-            <h1>{genre}</h1>
-            {categories?.map((comic) => <ListItemComicByGenre key={id} item={comic}/>)}
+            <Navbar/>
+            <div className={`jumbotron jumbotron-fluid ${style.jumbotronCustom}`}>
+                <div className="container">
+                <h1 className="display-4 mt-5">{genre} Comics</h1>
+                <p className="lead"></p>
+                </div>
+            </div>
+            <div className={`container ${style.comicContainer}`}>
+                <div className={style.comicList}>
+                    {categories?.map((comic) => <ListItemComicByGenre key={id} item={comic}/>)}
+                </div>
+            </div>
+            <Footer/>
         </div>
     )
 

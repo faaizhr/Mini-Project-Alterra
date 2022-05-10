@@ -13,15 +13,25 @@ tr,td {
 .jumbotronCustom {
     margin-top: -65px;
     height: 800px;
-    background-image: url(./Jumbotron.png);
+    background-image: url(./Jumbotron.jpg);
     background-size: cover;
+}
+
+.jumbotronCustom h1 {
+    font-size: 120px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+.jumbotronCustom p {
+    color: white;
 }
 
 .comicList {
     /* margin-top: 10px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 @media (max-width: 991.98px) {

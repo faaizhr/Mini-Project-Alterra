@@ -6,7 +6,7 @@ const ListItemComicByGenre = ({item}) => {
     // console.log("cek id", item.id)
 
     console.log("ListItemComicByGenre", item.comic.id)
-    const { id, title, penulis, penerbit, tahunTerbit, cover, content, categories } = item.comic
+    const { id, title, penulis, penerbit, tahunTerbit, cover, content, categories, ratings_aggregate } = item.comic
 
     const navigate = useNavigate()
     
@@ -20,19 +20,28 @@ const ListItemComicByGenre = ({item}) => {
                 tahunTerbit: tahunTerbit,
                 cover: cover,
                 content: content,
-                categories: categories
+                categories: categories,
+                ratings_aggregate: ratings_aggregate
             }
         })
     }
-    // console.log("item", item)
+    console.log("item", item)
+    
+    let fixRating = ratings_aggregate.aggregate.avg.rating_value;
+    let avgRating = fixRating.toFixed(2);
+    
+    console.log("pembulatan rating", avgRating)
     
     return (
       <div className={style.comicItem}>
-        <div className="card" style={{width: '18rem'}}>
+        <div className={`card ${style.cardListCustom}`} style={{width: '16rem'}}>
           <img src={cover} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title" onClick={() => handleDetail(id)}>{title}</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title" onClick={() => handleDetail(item.id)}>{title}</h5>
+            <div className="text-right">
+              <p className="card-text me-2">{avgRating}/5</p>
+              <i class="bi bi-star-fill"></i>
+            </div>
           </div>
           <ul className="list-group list-group-flush">
             {/* <li className="list-group-item">{item.id}</li> */}
