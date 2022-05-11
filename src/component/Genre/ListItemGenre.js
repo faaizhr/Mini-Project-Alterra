@@ -25,13 +25,9 @@ const ListItemGenre = ({item}) => {
     
     return (
         <div className={style.listItemGenre} onClick={() => handleDetail(item.id)}>
-            <div class="row justify-content-between">
-                <div class="col-11">
-                <p className="ms-3 align-middle" >{genre}</p>
-                </div>
-                <div class="col-1">
-                <i class="bi bi-chevron-right"></i>
-                </div>
+            <div className="d-flex justify-content-between">
+                <p className="ms-4 align-middle" >{genre}</p>
+                <i className="me-4 bi bi-chevron-right"></i>
             </div>
         </div>
     )

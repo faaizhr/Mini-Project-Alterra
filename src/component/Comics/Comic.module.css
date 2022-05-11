@@ -14,6 +14,36 @@
     color: white;
 }
 
+.searchbar {
+    width: 100%;
+}
+
+.searchbar input {
+    width: 90%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 8px 20px 8px 20px;
+}
+.searchbar input:focus{
+    outline: none;
+}
+
+.searchbar button {
+    width: 10%;
+    background-color: white;
+    border: none;
+    padding: 8px 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, #FFBD00 0px 0px 0px 1px;
+    border-radius: 0px 5px 5px 0px;
+    color: rgb(93, 93, 93);
+}
+
+.searchbar button:hover {
+    background-color: #FFBD00;
+    color: white;
+}
+
 .comicList {
     margin-top: 50px;
     display: flex;
@@ -57,6 +87,39 @@
 }
 .cardListCustom:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.rating {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.reactStars{
+    margin: auto;
+}
+
+.rating h5 {
+    font-weight: 400;
+}
+
+.rating button {
+    margin-top: 10px;
+    background-color: #FFBD00;
+    border: 1px solid #FFBD00;
+    border-radius: 5px;
+    color: white;
+}
+
+.rating button:hover {
+    background-color: #ffffff;
+    border: 1px solid #FFBD00;
+    border-radius: 5px;
+    color: #FFBD00;
 }
 
 .cardCustom {
@@ -109,5 +172,11 @@
 @media (max-width: 991.98px) {
     .jumbotronCustom {
       margin-top: 0px;
+    }
+    .searchbar input {
+        width: 80%;
+    }
+    .searchbar button {
+        width: 20%;
     }
   }

@@ -76,7 +76,10 @@ const DetailComic = (item) => {
           rating_value: value
         }
       })
-      alert("Thank You")
+      if (value == 1 || value == 2 || value == 3 || value == 4 || value == 5) {
+        alert("Thank You")
+      }
+      else alert("Enter your stars")
     }
 
     let fixRating = ratings_aggregate.aggregate.avg.rating_value;
@@ -137,19 +140,20 @@ const DetailComic = (item) => {
                     </ul>
 
                     <button onClick={handleBukaInput} style={editMode} className="py-1 px-3">Read</button>
-                    <div className="text-right">
-                      <p>Give this comic rating</p>
-                      <ReactStars
-                          count={5}
-                          onChange={ratingChanged}
-                          size={24}
-                          activeColor="#ffd700"
-                      />
-                      <button onClick={rating} className="py-1 px-3">Submit Rating</button>
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div className={`container ${style.rating}`}>
+              <h5>Rate this comic</h5>
+              <ReactStars
+                classNames={style.reactStars}
+                count={5}
+                onChange={ratingChanged}
+                size={29}
+                activeColor="#ffd700"
+              />
+              <button onClick={rating} className="py-1 px-3">Submit Rating</button>
             </div>
             <div className="container">
               <h3>Related Comics</h3>

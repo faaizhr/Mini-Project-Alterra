@@ -3,6 +3,7 @@ import useGetGenres from "../../hooks/useGetGenres"
 import ListItemGenre from "./ListItemGenre"
 import style from "./Genre.module.css"
 import Footer from "../Footer/Footer"
+import LoadingSvg from "../Comics/loadingSvg"
 
 function ListGenre() {
     
@@ -27,6 +28,7 @@ function ListGenre() {
                 <p className="lead"></p>
                 </div>
             </div>
+            { loading ? <LoadingSvg/> : ""}
             <div className={`container ${style.listGenre}`}>
                 {data?.genre.map((genre) => <ListItemGenre key={genre.id} item={genre}/>)}
             </div>

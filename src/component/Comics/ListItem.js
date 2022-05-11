@@ -24,12 +24,12 @@ const ListItem = ({item}) => {
             }
         })
     }
-    console.log("cek rating avg di listitem", ratings_aggregate)
+    // console.log("cek rating avg di listitem", ratings_aggregate)
 
     let fixRating = ratings_aggregate.aggregate.avg.rating_value;
     let avgRating = fixRating.toFixed(2);
     
-    console.log("pembulatan rating", avgRating)
+    // console.log("pembulatan rating", avgRating)
     
     return (
       <div className={style.comicItem}>

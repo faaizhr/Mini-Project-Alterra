@@ -4,13 +4,14 @@ import useGetComicLatest from "../../hooks/useGetComicLatest";
 import useGetComicBest from "../../hooks/useGetComicBest";
 import ListItem from "../Comics/ListItem";
 import Footer from "../Footer/Footer";
+import LoadingSvg from "../Comics/loadingSvg";
 
 function Home() {
 
-  const {data: dataLatest, loading, error} = useGetComicLatest()
+  const {data: dataLatest, loading: loadingLatest, error} = useGetComicLatest()
   console.log("data latest di home", dataLatest)
 
-  const {data: dataBest} = useGetComicBest()
+  const {data: dataBest, loading: loadingBest} = useGetComicBest()
   console.log("data best di home", dataBest)
 
   return (
@@ -32,10 +33,12 @@ function Home() {
         <h3>New Arrival</h3>
         <div className={style.comicList}>
           {dataLatest?.comics.map((comic) => <ListItem key={comic.id} item={comic}/>)}
+          { loadingLatest ? <LoadingSvg/> : ""}
         </div>
         <h3>Best Comic</h3>
         <div className={style.comicList}>
           {dataBest?.comics.map((comic) => <ListItem key={comic.id} item={comic}/>)}
+          { loadingBest ? <LoadingSvg/> : ""}
         </div>
       </div>
       <Footer/>
