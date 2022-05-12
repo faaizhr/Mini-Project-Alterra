@@ -27,8 +27,13 @@ const ListItemComicByGenre = ({item}) => {
     }
     console.log("item", item)
     
+    let avgRating
     let fixRating = ratings_aggregate.aggregate.avg.rating_value;
-    let avgRating = fixRating.toFixed(2);
+    if(fixRating == null ) {
+      avgRating = "not rated yet"
+    } else {
+      avgRating = fixRating.toFixed(2);
+    }
     
     console.log("pembulatan rating", avgRating)
     

@@ -82,8 +82,16 @@ const DetailComic = (item) => {
       else alert("Enter your stars")
     }
 
+    let avgRating
     let fixRating = ratings_aggregate.aggregate.avg.rating_value;
-    let avgRating = fixRating.toFixed(2);
+    if(fixRating == null ) {
+      avgRating = "not rated yet"
+    } else {
+      avgRating = fixRating.toFixed(2);
+    }
+    // let avgRating = fixRating.toFixed(2);
+    console.log("cek rating kosong", ratings_aggregate.aggregate.avg.rating_value)
+    console.log("cek rating lagi", avgRating)
 
     // console.log("detail", location.state)
     // console.log("cek kategori", categories)
@@ -125,7 +133,7 @@ const DetailComic = (item) => {
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                    <h5 className="card-title">{title}</h5>
+                    <h5 className="card-title mb-4">{title}</h5>
                     {/* <p className="card-text">{id}</p> */}
                     <p className="card-text">Author : {penulis} </p>
                     <p className="card-text">Publisher : {penerbit}</p>
@@ -166,6 +174,7 @@ const DetailComic = (item) => {
             <iframe
                 src={content}
                 frameBorder="0"
+                allowfullscreen
                 scrolling="auto"
                 height="950px"
                 width="60%"

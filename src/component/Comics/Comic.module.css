@@ -48,13 +48,8 @@
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-
-/* .comicContainer {
-    background-color: white;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-} */
 
 .comicItem {
     margin-bottom: 30px;
@@ -84,6 +79,7 @@
 
 .cardListCustom {
     border: none;
+    width: 16rem;
 }
 .cardListCustom:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -179,4 +175,25 @@
     .searchbar button {
         width: 20%;
     }
-  }
+}
+
+@media (max-width: 767.98px) {
+    .comicItem img{
+        height: 280px;
+    }
+    .cardListCustom {
+        border: none;
+        width: 11rem;
+    }
+    .comicItem h5 {
+        font-size: 15px;
+    }
+    .readComic iframe {
+        width: 90%;
+        height: 500px;
+        margin-top: 25px;
+    }
+    .jumbotronCustom {
+        display: none;
+    }
+}

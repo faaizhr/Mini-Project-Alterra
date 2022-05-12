@@ -1,0 +1,61 @@
+.jumbotronCustom {
+    margin-top: -65px;
+    background-image: url(../Home/Jumbotron.jpg);
+    background-size: cover;
+}
+
+.jumbotronCustom h1 {
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+.jumbotronCustom p {
+    color: white;
+}
+
+.description span {
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+}
+
+.description li {
+    letter-spacing: 2px;
+}
+
+.visionMission {
+    /* background-color: salmon; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+
+.visionMission p {
+    max-width: 500px;
+}
+
+.visionMission img {
+    width: 400px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Staatliches', cursive;
+}
+
+@media (max-width: 991.98px) {
+    .jumbotronCustom {
+      margin-top: 0px;
+    }
+    .visionMission img {
+        width: 200px;
+    }
+    .vision {
+        flex-wrap: wrap !important;
+    }
+  }
+
+@media (max-width: 691.98px) {
+    .visionMission img {
+        display: none;
+    }
+}

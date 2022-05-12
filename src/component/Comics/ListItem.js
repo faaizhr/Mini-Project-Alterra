@@ -26,14 +26,22 @@ const ListItem = ({item}) => {
     }
     // console.log("cek rating avg di listitem", ratings_aggregate)
 
-    let fixRating = ratings_aggregate.aggregate.avg.rating_value;
-    let avgRating = fixRating.toFixed(2);
+    // let fixRating = ratings_aggregate.aggregate.avg.rating_value;
+    // let avgRating = fixRating.toFixed(2);
     
     // console.log("pembulatan rating", avgRating)
+
+    let avgRating
+    let fixRating = ratings_aggregate.aggregate.avg.rating_value;
+    if(fixRating == null ) {
+      avgRating = "not rated yet"
+    } else {
+      avgRating = fixRating.toFixed(2);
+    }
     
     return (
       <div className={style.comicItem}>
-        <div className={`card ${style.cardListCustom}`} style={{width: '16rem'}}>
+        <div className={`card ${style.cardListCustom}`}>
           <img src={cover} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title" onClick={() => handleDetail(item.id)}>{title}</h5>

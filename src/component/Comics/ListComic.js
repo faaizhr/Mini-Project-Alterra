@@ -87,7 +87,7 @@ function ListComic() {
             </div>
             { loading ? <LoadingSvg/> : ""}
             { loadingSeacrh ? <LoadingSvg/> : ""}
-            <div className={`container ${style.comicContainer}`}>
+            <div className="container">
                 <div className={style.comicList}>
                     {comicData?.comics.map((comic) => <ListItem key={comic.id} item={comic}/>)}
                 </div>

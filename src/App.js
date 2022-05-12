@@ -6,6 +6,7 @@ import ListComic from './component/Comics/ListComic';
 import DetailComic from './component/Comics/ComicDetail';
 import ListGenre from './component/Genre/ListGenre';
 import ListComicByGenre from './component/Genre/ListComicByGenre';
+import AboutUs from './component/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/comics/:id' element={<DetailComic />}/>
         <Route exact path='/genres' element={<ListGenre />}/>
         <Route exact path='/genres/:id' element={<ListComicByGenre />}/>
+        <Route exact path='/about' element={<AboutUs />}/>
       </Routes>
     </Router>
   );

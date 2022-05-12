@@ -30,12 +30,12 @@ function Home() {
       </div>
 
       <div className="container-xxl">
-        <h3>New Arrival</h3>
+        <h3 className="mb-4">New Arrival</h3>
         <div className={style.comicList}>
           {dataLatest?.comics.map((comic) => <ListItem key={comic.id} item={comic}/>)}
           { loadingLatest ? <LoadingSvg/> : ""}
         </div>
-        <h3>Best Comic</h3>
+        <h3 className="mb-4">Best Comic</h3>
         <div className={style.comicList}>
           {dataBest?.comics.map((comic) => <ListItem key={comic.id} item={comic}/>)}
           { loadingBest ? <LoadingSvg/> : ""}

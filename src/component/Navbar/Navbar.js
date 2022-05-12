@@ -18,8 +18,8 @@ function Navbar() {
             // Change the color of links on scroll
             for (let i = 0; i < links.length; i++) {
                 const element = links[i];
-                element.classList.remove('text-white');
                 element.classList.add('text-black');
+                element.classList.remove('text-white');
             }
 
         } else {
@@ -28,8 +28,8 @@ function Navbar() {
             // Change the color of links back to default
             for (let i = 0; i < links.length; i++) {
                 const element = links[i];
-                element.classList.remove('text-black');
                 element.classList.add('text-white');
+                element.classList.remove('text-black');
             }
         }
     }
@@ -46,7 +46,7 @@ function Navbar() {
                     <Link className="nav-link me-3" aria-current="page" to="/home">Home</Link>
                     <Link className="nav-link me-3" to="/comics">Comics</Link>
                     <Link className="nav-link me-3" to="/genres">Genres</Link>
-                    <a className="nav-link" href="#">About Us</a>
+                    <Link className="nav-link" to="/about">About Us</Link>
                 </div>
                 </div>
             </div>
