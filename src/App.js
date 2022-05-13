@@ -12,8 +12,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/' element={<Login />}/>
-        <Route exact path='/home' element={<Home />}/>
+        {/* <Route exact path='/' element={<Login />}/> */}
+        <Route exact path='/' element={<Home />}/>
         <Route exact path='/comics' element={<ListComic />}/>
         <Route exact path='/comics/:id' element={<DetailComic />}/>
         <Route exact path='/genres' element={<ListGenre />}/>

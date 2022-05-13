@@ -3,15 +3,21 @@ import { gql, useLazyQuery, useQuery } from "@apollo/client"
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom"
 import { useState } from "react"
+
 import ListItem from "./ListItem"
 import Categories from "./Categories"
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+
+
 import useInsertRating from "../../hooks/useInsertRating"
 import ReactStars from "react-rating-stars-component";
+import { ToastContainer, toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'
 import style from "./Comic.module.css"
+
 // import useGetRelatedComics from "../../hooks/useGetRelatedComics";
-import useGetComic from "../../hooks/useGetComic"
+// import useGetComic from "../../hooks/useGetComic"
 
 const GetRelatedComics = gql `
 query MyQuery ($_eq: String = "", $_neq: String = "") {
@@ -39,6 +45,8 @@ query MyQuery ($_eq: String = "", $_neq: String = "") {
   }
 }
 `;
+
+// toast.configure()
 
 const DetailComic = (item) => {
 
@@ -77,9 +85,9 @@ const DetailComic = (item) => {
         }
       })
       if (value == 1 || value == 2 || value == 3 || value == 4 || value == 5) {
-        alert("Thank You")
+        toast.success("Thank you for your feedback");
       }
-      else alert("Enter your stars")
+      else toast.error("Enter your stars first");
     }
 
     let avgRating
@@ -119,6 +127,8 @@ const DetailComic = (item) => {
     return (
         <div>
           <Navbar/>
+          {/* <button onClick={notify}>Test Notify</button> */}
+          <ToastContainer />
           <div className={`jumbotron jumbotron-fluid ${style.jumbotronCustom}`}>
             <div className="container">
               <h1 className="display-4 mt-5">Comic Detail</h1>

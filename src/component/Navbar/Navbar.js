@@ -43,7 +43,7 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <Link className="nav-link me-3" aria-current="page" to="/home">Home</Link>
+                    <Link className="nav-link me-3" to="/">Home</Link>
                     <Link className="nav-link me-3" to="/comics">Comics</Link>
                     <Link className="nav-link me-3" to="/genres">Genres</Link>
                     <Link className="nav-link" to="/about">About Us</Link>

@@ -37,6 +37,11 @@
     width: 400px;
 }
 
+.biodata {
+    /* background-color: salmon; */
+    padding-top: 100px;
+}
+
 h1 {
     font-size: 100px;
     font-family: 'Staatliches', cursive;
@@ -51,6 +56,9 @@ h1 {
     }
     .vision {
         flex-wrap: wrap !important;
+    }
+    .biodata {
+        padding-top: 20px;
     }
   }
 

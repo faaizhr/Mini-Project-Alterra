@@ -4,6 +4,8 @@ import Footer from "../Footer/Footer"
 import VisiImage from "./img/visi.jpg"
 import MisiImage from "./img/misi.jpg"
 
+import ProfileAvatar from "./img/profileimg.png"
+
 function AboutUs() {
     return(
         <div>
@@ -46,6 +48,19 @@ function AboutUs() {
                         </div>
                     </div>
                 </div>
+                <div className="mt-5">
+                    <h2>Meet Our Creator</h2>
+                    <div className="d-flex justify-content-around mt-5 flex-wrap">
+                        <img src={ProfileAvatar}></img>
+                        <div className={style.biodata}>
+                            <p>Muhammad Faiz Hafizh Ramadhan</p>
+                            <p>Information System Student at Universitas Pembangunan Nasional Veteran Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                {/* <div>
+                    <h2>Contact Us</h2>
+                </div> */}
             </div>
             <Footer/>
         </div>
