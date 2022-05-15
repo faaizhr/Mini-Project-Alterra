@@ -17,6 +17,10 @@ tr,td {
     background-size: cover;
 }
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .jumbotronCustom h1 {
     font-size: 120px;
     font-family: 'Staatliches', cursive;

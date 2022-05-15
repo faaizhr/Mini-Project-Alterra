@@ -196,4 +196,10 @@
     .jumbotronCustom {
         display: none;
     }
+    .searchbar input {
+        font-size: 10px;
+    }
+    .searchbar button {
+        font-size: 10px;
+    }
 }

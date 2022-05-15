@@ -27,26 +27,26 @@ function Footer() {
         <div className={`mt-5 ${style.footer}`}>
             <div className="container pt-4">
                 <div className='row'>
-                    <div className='col-4'>
+                    <div className='col-lg-4 col-sm-12'>
                         <h6>YOMU</h6>
                         <p>YOMU is here as the most complete online comic reading provider platform in Indonesia. This platform allows you to access and download comics for free and can be translated into various languages.</p>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-lg-4 col-sm-12'>
                         <h6>Contact Us</h6>
                         <div>
-                            <i className="bi bi-telephone inline"></i>
-                            <p>081222249165</p>
+                            <i className="bi bi-telephone d-inline"></i>
+                            <p className='d-inline-block ms-3'>081222249165</p>
                         </div>
                         <div>
-                            <i class="bi bi-geo-alt"></i>
-                            <p>Pacific Century Place Tower Lt. 26 SCBD (Sudirman Central Business District) Lot 10, Jl. Jenderal Sudirman No.52-53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190</p>
+                            <i className="bi bi-geo-alt d-inline"></i>
+                            <p className='d-inline ms-3'>Pacific Century Place Tower Lt. 26 SCBD (Sudirman Central Business District) Lot 10, Jl. Jenderal Sudirman No.52-53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190</p>
                         </div>
                         <div>
-                            <i class="bi bi-envelope"></i>
-                            <p>faizhafizh29@gmail.com</p>
+                            <i className="bi bi-envelope"></i>
+                            <p className='d-inline-block ms-3'>faizhafizh29@gmail.com</p>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-lg-4 col-sm-12'>
                         <h6>Follow Us</h6>
                         <div className={style.logo}>
                             <div className={style.instagramLogo}>
