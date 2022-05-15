@@ -23,13 +23,13 @@ function Home() {
           <p className="lead">online comic reading provider platform in Indonesia.</p>
         </div>
       </div>
-      <div className="container-xxl">
+      <div className="container">
         <div className="home-content">
           <p>YOMU is here as the most complete online comic reading provider platform in Indonesia. This platform allows you to access and download comics for free and can be translated into various languages. We will also continue to develop collaborations with various publishers to continue to complement the comics available on our website. Through a platform that will continue to be developed according to your wishes, YOMU will always strive to be your best platform. </p>
         </div>
       </div>
 
-      <div className="container-xxl">
+      <div className="container">
         <h3 className="mb-4">New Arrival</h3>
         <div className={style.comicList}>
           {dataLatest?.comics.map((comic) => <ListItem key={comic.id} item={comic}/>)}
@@ -42,6 +42,14 @@ function Home() {
         </div>
       </div>
       <Footer/>
+      {/* <div className={style.cobaNavbar}>
+        <h6>Navbar</h6>
+        <div className={style.isiNavbar}>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+      </div> */}
     </div>
   )
 }

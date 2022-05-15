@@ -28,7 +28,7 @@ query MyQuery {
 
 export const GetComicsLatest = gql `
 query MyQuery {
-  comics(limit: 5, order_by: {tahunTerbit: desc}) {
+  comics(limit: 4, order_by: {tahunTerbit: desc}) {
     content
     cover
     id
@@ -87,7 +87,7 @@ query MyQuery {
 
 export const GetComicsBest = gql `
 query MyQuery {
-  comics(limit: 5, order_by: {ratings_aggregate: {avg: {rating_value: desc_nulls_last}}}) {
+  comics(limit: 4, order_by: {ratings_aggregate: {avg: {rating_value: desc_nulls_last}}}) {
     content
     cover
     id

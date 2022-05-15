@@ -48,7 +48,7 @@ query MyQuery ($_eq: String = "", $_neq: String = "") {
 
 // toast.configure()
 
-const DetailComic = (item) => {
+const DetailComic = () => {
 
   
   const location = useLocation()
