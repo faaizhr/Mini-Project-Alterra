@@ -31,24 +31,6 @@ tr,td {
     color: white;
 }
 
-/* .cobaNavbar {
-    background-image: url(./Jumbotron.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    height: 200px;
-} */
-
-/* .isiNavbar {
-     background-color: salmon; 
-} */
-
-/* .isiNavbar p {
-    display: inline;
-    margin-left: 30px;
-} */
-
 .comicList {
     /* margin-top: 10px; */
     display: flex;
