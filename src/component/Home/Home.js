@@ -42,14 +42,6 @@ function Home() {
         </div>
       </div>
       <Footer/>
-      {/* <div className={style.cobaNavbar}>
-        <h6>Navbar</h6>
-        <div className={style.isiNavbar}>
-            <p>Home</p>
-            <p>About</p>
-            <p>Contact</p>
-        </div>
-      </div> */}
     </div>
   )
 }

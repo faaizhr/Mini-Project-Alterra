@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Switch, Link } from 'react-router-dom';
 import Home from './component/Home/Home'
-import Login from './component/Login';
+// import Login from './component/Login';
 import ListComic from './component/Comics/ListComic';
 import DetailComic from './component/Comics/ComicDetail';
 import ListGenre from './component/Genre/ListGenre';
