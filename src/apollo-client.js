@@ -5,7 +5,7 @@ import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
 import { createClient } from 'graphql-ws';
 
 const httpLink = new HttpLink({
-  uri: 'https://premium-swift-85.hasura.app/v1/graphql',
+  uri: 'https://comic-yomu.hasura.app/v1/graphql',
   headers: {
       'x-hasura-admin-secret':
         'nHIbxf2m72s7KsFjfhYgfMQtTeOtzqf4HYspU6rz4mzFdzZyrQIe5CrPXW2kHhBE',
@@ -13,7 +13,7 @@ const httpLink = new HttpLink({
 });
 
 const wsLink = new GraphQLWsLink(createClient({
-  url: 'wss://premium-swift-85.hasura.app/v1/graphql',
+  url: 'wss://comic-yomu.hasura.app/v1/graphql',
   connectionParams: {
       headers: {
           'x-hasura-admin-secret':
